@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from './Header';
 import ToDoForm from './ToDoForm';
 
@@ -16,11 +16,22 @@ class App extends React.Component {
         this.setState({inputValue: e.target.value})
       };
 
+      addNewTask = (e) => {
+          e.preventDefault();
+        //   console.log('work');
+        if(this.state.inputValue !== '') {
+            this.setState({
+                inputValue: '',
+                tasks: [...this.state.tasks, this.state.inputValue]
+              });
+        }
+      };
+
     render() {
         return (
             <div>
                 <Header />
-                <ToDoForm onInputChange={this.onInputChange}/>
+                <ToDoForm onInputChange={this.onInputChange} addNewTask={this.addNewTask}/>
             </div> 
         );
     };
