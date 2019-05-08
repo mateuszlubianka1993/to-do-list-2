@@ -1,0 +1,12 @@
+.task-box {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.card-body-box {
+    padding: 7px;
+}
+.card-header-footer {
+    padding: 7px;
+}
