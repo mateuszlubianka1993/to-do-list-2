@@ -32,6 +32,13 @@ class App extends React.Component {
         this.setState({tasks: []})
       };
 
+      removeLastTask = () => {
+        const copy = this.state.tasks;
+        copy.pop();
+
+        this.setState({tasks: copy});
+      };
+
     render() {
         return (
             <div>
@@ -39,7 +46,8 @@ class App extends React.Component {
                 <ToDoForm 
                 onInputChange={this.onInputChange} 
                 addNewTask={this.addNewTask}
-                deleteAllTasks={this.deleteAllTasks}/>
+                deleteAllTasks={this.deleteAllTasks}
+                removeLastTask={this.removeLastTask}/>
                 <List tasks={this.state.tasks} />
             </div> 
         );

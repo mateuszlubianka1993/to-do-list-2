@@ -20,7 +20,7 @@ class ToDoForm extends React.Component {
                     <MDBBtn onClick={clear} type="submit" rounded size="sm" color="success">Add task</MDBBtn>
                 </MDBFormInline>
                 <MDBBtn onClick={this.props.deleteAllTasks} rounded color="danger" size="sm">Delete All</MDBBtn>
-                <MDBBtn rounded color="danger" size="sm">Delete Last</MDBBtn>
+                <MDBBtn onClick={this.props.removeLastTask} rounded color="danger" size="sm">Delete Last</MDBBtn>
             </div>
         );
     };
