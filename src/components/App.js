@@ -47,7 +47,8 @@ class App extends React.Component {
                 onInputChange={this.onInputChange} 
                 addNewTask={this.addNewTask}
                 deleteAllTasks={this.deleteAllTasks}
-                removeLastTask={this.removeLastTask}/>
+                removeLastTask={this.removeLastTask}
+                delete={this.deleteTask}/>
                 <List tasks={this.state.tasks} />
             </div> 
         );

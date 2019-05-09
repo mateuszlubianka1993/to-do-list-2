@@ -1,6 +1,13 @@
 .header-container {
     text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 35px 5px 15px 5px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .color-letter {
     color: red;

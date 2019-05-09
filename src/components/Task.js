@@ -4,13 +4,14 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardHeader, MDBCardFooter, MDBBt
 "mdbreact";
 
 const Task = (props) => {
+    
     return (
         <div key={props.index} className="task-box">
             <MDBCard className="text-center task-card">
                 <MDBCardHeader className="card-header-footer" color="success-color">Task number {props.index + 1}</MDBCardHeader>
                 <MDBCardBody className="card-body-box">
                     <MDBCardTitle>{props.task}</MDBCardTitle>
-                    <MDBBtn color="danger" size="sm">
+                    <MDBBtn color="danger" size="sm"  >
                         Delete
                     </MDBBtn>
                 </MDBCardBody>
