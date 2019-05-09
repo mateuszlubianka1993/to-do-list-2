@@ -14,7 +14,7 @@ const Task = (props) => {
                         Delete
                     </MDBBtn>
                 </MDBCardBody>
-                <MDBCardFooter className="card-header-footer" color="success-color">{props.date}</MDBCardFooter>
+                <MDBCardFooter className="card-header-footer" color="success-color"></MDBCardFooter>
             </MDBCard>
         </div>
     );

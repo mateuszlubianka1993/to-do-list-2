@@ -8,8 +8,7 @@ class App extends React.Component {
         super(props)
         this.state = {
             tasks: [],
-            inputValue: '',
-            // date: ''
+            inputValue: ''
           };
       };
 
@@ -17,16 +16,14 @@ class App extends React.Component {
         //   console.log(e.target.value);
         this.setState({inputValue: e.target.value});
       };
-      
-      addNewTask = (e) => {
+
+      addNewTask = async (e) => {
           e.preventDefault();
-          // const today = new Date().toLocaleString();
         //   console.log('work');
         if(this.state.inputValue !== '') {
             this.setState({
                 inputValue: '',
-                tasks: [...this.state.tasks, this.state.inputValue],
-                // date: today
+                tasks: [...this.state.tasks, this.state.inputValue]
               });
         }
       };
@@ -36,7 +33,7 @@ class App extends React.Component {
             <div>
                 <Header />
                 <ToDoForm onInputChange={this.onInputChange} addNewTask={this.addNewTask}/>
-                <List tasks={this.state.tasks} date={this.state.date}/>
+                <List tasks={this.state.tasks} />
             </div> 
         );
     };
