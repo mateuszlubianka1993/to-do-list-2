@@ -9,24 +9,24 @@ class App extends React.Component {
         this.state = {
             tasks: [],
             inputValue: '',
-            date: ''
+            // date: ''
           };
       };
 
       onInputChange = (e) => {
         //   console.log(e.target.value);
-        this.setState({inputValue: e.target.value})
+        this.setState({inputValue: e.target.value});
       };
-
+      
       addNewTask = (e) => {
           e.preventDefault();
-          const today = new Date().toLocaleString();
+          // const today = new Date().toLocaleString();
         //   console.log('work');
         if(this.state.inputValue !== '') {
             this.setState({
                 inputValue: '',
                 tasks: [...this.state.tasks, this.state.inputValue],
-                date: today
+                // date: today
               });
         }
       };

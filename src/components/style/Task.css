@@ -1,8 +1,9 @@
 .task-box {
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    flex-basis: 33%;
+    /* margin-right: auto;
+    margin-left: auto; */
     padding: 15px;
+    /* float: left; */
 }
 .card-body-box {
     padding: 7px;

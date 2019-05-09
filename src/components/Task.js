@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/Task.css';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardHeader, MDBCardFooter, MDBBtn, MDBContainer } from
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardHeader, MDBCardFooter, MDBBtn } from
 "mdbreact";
 
 const Task = (props) => {
@@ -13,9 +13,8 @@ const Task = (props) => {
                     <MDBBtn color="danger" size="sm">
                         Delete
                     </MDBBtn>
-                    {/* <MDBCardFooter color="success-color">{props.date}</MDBCardFooter> */}
                 </MDBCardBody>
-                <MDBCardFooter className="card-header-footer" color="success-color">2 days ago</MDBCardFooter>
+                <MDBCardFooter className="card-header-footer" color="success-color">{props.date}</MDBCardFooter>
             </MDBCard>
         </div>
     );
