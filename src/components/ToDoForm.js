@@ -19,7 +19,7 @@ class ToDoForm extends React.Component {
                     <input onChange={this.props.onInputChange} ref={this.inputRef} className="form-control mr-sm-2"  type="text" placeholder="Add next task" aria-label="Search" />
                     <MDBBtn onClick={clear} type="submit" rounded size="sm" color="success">Add task</MDBBtn>
                 </MDBFormInline>
-                <MDBBtn rounded color="danger" size="sm">Delete All</MDBBtn>
+                <MDBBtn onClick={this.props.deleteAllTasks} rounded color="danger" size="sm">Delete All</MDBBtn>
                 <MDBBtn rounded color="danger" size="sm">Delete Last</MDBBtn>
             </div>
         );
