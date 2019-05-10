@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './Header';
 import ToDoForm from './ToDoForm';
 import List from './List';
+import Footer from './Footer';
+import './style/App.css';
 
 class App extends React.Component {
     constructor(props) {
@@ -41,8 +43,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <Header />
+            <div className="app-container">
+              <div className="content">
+              <Header />
                 <ToDoForm 
                 onInputChange={this.onInputChange} 
                 addNewTask={this.addNewTask}
@@ -50,6 +53,8 @@ class App extends React.Component {
                 removeLastTask={this.removeLastTask}
                 delete={this.deleteTask}/>
                 <List tasks={this.state.tasks} />
+              </div>
+              <Footer />
             </div> 
         );
     };

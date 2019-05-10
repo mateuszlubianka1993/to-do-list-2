@@ -1,0 +1,22 @@
+.footer-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 5px 15px 5px;
+    background-color: aliceblue;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.name-box {
+    display: flex;
+    align-items: center;
+    font-size: 120%;
+}
+.social-buttons.git {
+    background-color: #333 !important;
+}
+.social-buttons.linkedin {
+    background-color: #0077b5 !important;
+}
