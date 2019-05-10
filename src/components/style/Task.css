@@ -14,3 +14,13 @@
 .card-header-footer {
     padding: 7px;
 }
+@media (max-width: 991px) {
+    .task-box {
+        flex-basis: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .task-box {
+        flex-basis: 100%;
+    }
+}

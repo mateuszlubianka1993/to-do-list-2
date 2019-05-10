@@ -1,8 +1,7 @@
 .footer-container {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 35px 5px 15px 5px;
+    padding: 15px;
     background-color: aliceblue;
     height: 90px;
     display: flex;
@@ -19,4 +18,14 @@
 }
 .social-buttons.linkedin {
     background-color: #0077b5 !important;
+}
+@media (max-width: 767px) {
+    .name-box, .social-box {
+        flex-basis: 100%;
+    }
+    .footer-container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
 }
