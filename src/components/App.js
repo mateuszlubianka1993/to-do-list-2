@@ -41,6 +41,12 @@ class App extends React.Component {
         this.setState({tasks: copy});
       };
 
+      deleteTask = (index) => {
+        this.setState(updatedTasks => ({
+          tasks: updatedTasks.tasks.filter(task => task !== index )
+        }));
+      };
+
     render() {
         return (
             <div className="app-container">
@@ -52,7 +58,7 @@ class App extends React.Component {
                 deleteAllTasks={this.deleteAllTasks}
                 removeLastTask={this.removeLastTask}
                 delete={this.deleteTask}/>
-                <List tasks={this.state.tasks} />
+                <List tasks={this.state.tasks} delete={this.deleteTask} />
               </div>
               <Footer />
             </div> 

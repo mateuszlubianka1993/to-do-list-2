@@ -11,7 +11,7 @@ const Task = (props) => {
                 <MDBCardHeader className="card-header-footer" color="success-color">Task number {props.index + 1}</MDBCardHeader>
                 <MDBCardBody className="card-body-box">
                     <MDBCardTitle>{props.task}</MDBCardTitle>
-                    <MDBBtn color="danger" size="sm"  >
+                    <MDBBtn onClick={props.delete.bind(this, props.task)} color="danger" size="sm"  >
                         Delete
                     </MDBBtn>
                 </MDBCardBody>
