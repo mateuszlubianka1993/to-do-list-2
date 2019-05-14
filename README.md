@@ -18,8 +18,8 @@ I made this app to learn basic skills in React.
 This is simple To Do List App. You can add new task, delete all, delete last or delete that task that you want. 
 
 ## Screenshots
-![screenshot - for laptop](./images/t-2-laptop)
-![screenshot - for mobile](./images/t-2-mobile)
+![screenshot - for laptop](./images/t-2-laptop.jpg)
+![screenshot - for mobile](./images/t-2-mobile.jpg)
 
 ## Contact
 Created by [lubiankamateusz@gmail.com] - feel free to contact me!
