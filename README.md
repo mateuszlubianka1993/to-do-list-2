@@ -19,7 +19,6 @@ This is simple To Do List App. You can add new task, delete all, delete last or 
 
 ## Screenshots
 ![screenshot - for laptop](./images/t-2-laptop)
-![screenshot - for tablet](./images/t-2-tablet)
 ![screenshot - for mobile](./images/t-2-mobile)
 
 ## Contact
